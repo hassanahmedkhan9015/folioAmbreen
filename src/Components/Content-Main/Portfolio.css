@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.dark-mode {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+/* PAGE-RELOAD-AMIMATION  */
+.fade-in {
+  opacity: 0;
+  transform: translateY(
+    20px
+  ); /* Optional: You can change this to a different transformation */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CSS  */
+.portfolio-head {
+  font-size: 45px;
+  font-family: "Aclonica", sans-serif;
+}
+.des-portfolio {
+  font-size: 22px;
+  font-family: "Roboto", sans-serif;
+}
+.des-card {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.des-card-des {
+  margin-top: -20px;
+  color: #949494;
+  font-size: 12px;
+  font-family: "Roboto", sans-serif;
+}
+
+/* CARD-CSS AND ANIMATION  */
+.card {
+  position: relative;
+  width: 300px;
+  aspect-ratio: 16/9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 3px 3px 17px 0px rgba(0, 0, 0, 0.55);
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card__image {
+  width: 50%;
+  height: 50%;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  background-color: white;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.res-m {
+  margin-top: 1.5rem;
+}
+.card:hover .card__content {
+  transform: rotateX(0deg);
+}
+.card:hover svg {
+  scale: 0;
+}
+.card-btns {
+  background-color: black;
+  margin-right: 16px;
+  padding: 3px;
+  border: none;
+}
+.card-btns:hover {
+  background-color: #ff014f;
+}
+body.dark-mode .card-btns {
+  background-color: black;
+}
+body.dark-mode .card-btns:hover {
+  background-color: #ff014f;
+}
+body.dark-mode .card {
+  box-shadow: 3px 3px 17px 0px rgba(255, 255, 255, 0.55);
+}
+
+/* MEDIA-QUERY  */
+
+@media (max-width: 300px) {
+  .card {
+    width: 250px;
+    margin: auto;
+  }
+}
+@media (min-width: 301px) and (max-width: 575px) {
+  .card {
+    width: 270px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 576px) {
+  .card {
+    margin: auto;
+  }
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    margin: auto;
+  }
+}

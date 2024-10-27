@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Active button styles */
+.nav-btns.active {
+  background-color: #52c2a3;
+}
+.nav-btns-mob.active {
+  background-color: #52c2a3;
+}
+body.dark-mode .nav-btns.active {
+  background-color: #52c2a3;
+}
+body.dark-mode .nav-btns-mob.active {
+  background-color: #52c2a3;
+}
+
+.dark-mode {
+  background-color: #000 !important;
+  color: #fff !important;
+}
+
+.nav-btns {
+  background-color: #454e56;
+  margin-right: 16px;
+  padding: 3px;
+  border: none;
+}
+.nav-btns:hover {
+  background-color: #3b9179;
+}
+
+/* Mobile-Size  */
+.nav-btns-mob {
+  background-color: #454e56;
+  padding: 3px;
+  border: none;
+}
+.add-border {
+  border-top: #52c2a3;
+  box-shadow: 0px 0px 6px #52c2a3;
+}
+body.dark-mode .nav-btns {
+  /* background-color: #ff004c; */
+}
+body.dark-mode .nav-btns-mob {
+  background-color: #454e56;
+}

@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Titan+One&display=swap");
+/* font-family: 'Titan One', cursive; */
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Display&family=Oswald&family=Roboto&family=Titan+One&display=swap");
+/* font-family: 'Noto Sans Display', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+/* font-family: 'Orbitron', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&display=swap");
+/* font-family: 'Aclonica', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Moonrocks&display=swap");
+/* font-family: 'Rubik Moonrocks', cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+/* font-family: 'Black Ops One', cursive; */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px); /* Optional: You can change this to a different transformation */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.name-text {
+  font-size: 55px;
+  /* font-family: "Rubik Moonrocks", cursive; */
+  /* font-family: 'Black Ops One', cursive; */
+  font-family: "Aclonica", sans-serif;
+ 
+
+}
+.hi-there {
+  font-size: 40px;
+  font-family: "Orbitron", sans-serif;
+  letter-spacing: 3px;
+}
+.im {
+  font-size: 48px;
+  font-family: "Aclonica", sans-serif;
+}
+.waving {
+  width: 68px;
+  margin: -16px -20px;
+  animation: wave 5s infinite linear;
+}
+@keyframes wave {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10%,
+  30% {
+    transform: rotate(20deg);
+  }
+  40%,
+  60% {
+    transform: rotate(0deg);
+  }
+}
+
+.text-change {
+  background-color: #52c2a3;
+  color: white;
+}
+.round-first {
+  border-radius: 7px 0px 0px 7px;
+}
+.round-sec {
+  border-radius: 0px 7px 7px 0px;
+}
+.des-text {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.about-me{
+  background-color: #52c2a3;
+  color: white;
+  font-size: 20px;
+    font-weight: 500;
+    border-radius: 10px;
+  
+}
+.btn-submit{
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.btn-download {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 3px;
+  height: 3em;
+  padding: 10px;
+  border: none;
+  background-color: #52c2a3;
+  color: white;
+
+  overflow: hidden;
+  border-radius: 5px
+ }
+ 
+.btn-download::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: #52c2a3;
+  background: linear-gradient(90deg, #52c2a3 20%, rgb(4, 125, 117) 100%);
+  transition: 0.2s;
+ }
+ 
+.btn-download .label {
+  position: relative;
+ }
+ 
+.btn-download .icon {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3em;
+  width: 3em;
+  position: absolute;
+  top: 3em;
+  right: 0;
+  opacity: 0;
+  transition: 0.4s;
+ }
+ 
+.btn-download:hover::before {
+  height: 100%;
+ }
+ 
+.btn-download:hover .icon {
+  top: 0;
+  opacity: 1;
+ }

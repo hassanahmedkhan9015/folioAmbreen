@@ -1,0 +1,56 @@
+.icon{
+  width: 60px;
+  
+}
+.btn-mode{
+  border: none;
+}
+
+
+/* Apply transitions to relevant properties */
+body {
+    transition: background-color 1s ease, color 0.3s ease;
+  }
+  
+  /* Define styles for dark mode */
+  body.dark-mode {
+    background-color: #222; /* Change to your dark background color */
+    color: #fff; /* Change to your dark text color */
+  }
+  
+  /* Define styles for light mode */
+  body.light-mode {
+    background-color: #fff; /* Change to your light background color */
+    color: #333; /* Change to your light text color */
+  }
+  
+  /* Add a transition for button color */
+  .btn-toggle-dark {
+    transition: color 0.3s ease;
+  }
+  
+  /* Dark mode button color in light mode */
+  body.light-mode .btn-toggle-dark {
+    color: #fff; /* Change to your dark mode button color in light mode */
+  }
+  
+  /* Light mode button color in dark mode */
+  body.dark-mode .btn-toggle-dark {
+    color: #000; /* Change to your light mode button color in dark mode */
+  }
+
+  /* Add styles for the navigation sidebar in dark mode */
+body.dark-mode .nav-btns-mob{
+  background-color: #222; 
+  color: #fff; /* Change to your desired dark mode text color */
+}
+
+body.dark-mode .nav-bg-mob {
+background-color:black;
+}
+
+
+
+
+
+  
